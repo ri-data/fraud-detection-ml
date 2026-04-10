@@ -12,6 +12,7 @@ do by hand, now done by machine in milliseconds.
 - 284,807 real credit card transactions
 - Only 492 are fraud — that is 0.17%
 - Source: Kaggle — ULB Machine Learning Group
+ -- 
 This imbalance is exactly what makes fraud detection hard. A lazy model 
 can score 99.8% accuracy by flagging nothing as fraud. That is useless.
 ## My Approach
@@ -26,6 +27,7 @@ can score 99.8% accuracy by flagging nothing as fraud. That is useless.
 | Logistic Regression | 85% | 57% | 0.68 |
 | LR with class_weight | 6% | 92% | 0.12 |
 | Random Forest | 97% | 74% | 0.84 |
+
 Random Forest was the winner — 97% precision with 74% recall.
 ## What I Learned
 Accuracy is a misleading metric for imbalanced data. Recall is what 
