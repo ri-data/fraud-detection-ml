@@ -30,6 +30,12 @@ can score 99.8% accuracy by flagging nothing as fraud. That is useless.
 | Random Forest | 97% | 74% | 0.84 |
 
 
+## Business Recommendation
+Deploy Random Forest with a manual review queue for flagged transactions.
+At 74% recall, the model catches 3 in 4 fraud attempts automatically.
+The remaining 26% can be caught through manual triggers — unusual location,
+new device, or first-time large transaction.
+
 Random Forest was the winner — 97% precision with 74% recall.
 ## What I Learned
 Accuracy is a misleading metric for imbalanced data. Recall is what 
